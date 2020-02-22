@@ -7,9 +7,11 @@ class Input extends Component {
   
   render() {
     return (
-       <form >
+
+
+       <form onSubmit>
         <input 
-          type="text"
+          type="textbox"
           name="fullname"
           placeholder="Full name"
           // value={this.state.fullname}
@@ -17,8 +19,7 @@ class Input extends Component {
           
         />
         <br/>
-        <label>
-          Email:
+        
         <input
           type="email"
           name="email"
@@ -26,7 +27,7 @@ class Input extends Component {
           // value={this.state.email}
           // onChange={this.updateInput}
         />
-        </label>
+        
         
          <br/>
 
