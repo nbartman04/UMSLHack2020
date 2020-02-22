@@ -1,44 +1,26 @@
 import React, {Component} from 'react';
+import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import './App.css';
-// import test_picture from './assets'
+import home from './components/homepage/homepage'
+import Navigation from './components/Nav_bar/Nav_bar'
+import Input from './components/Input_component/input_component'
+// import logo from './assets/logo.jpg'
 // import fire from '.components/config/firebase';
 
 class App extends Component {
-  
-  
   render() {
-    return (
-       <form >
-        <input 
-          type="text"
-          name="fullname"
-          placeholder="Full name"
-          // value={this.state.fullname}
-          // onChange={this.updateInput}
-          
-        />
-        <br/>
-        <label>
-          Email:
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          // value={this.state.email}
-          // onChange={this.updateInput}
-        />
-        </label>
-         <br/>
-        <input
-        type="password"
-        name="password"
-        placeholder="password"
-        />
-         <br/>
-        <button type="submit">Submit</button>
-      </form>
-      );
-}
+    return (      
+       <BrowserRouter>
+        <div>
+        <Navigation />
+            <Switch>
+             <Route path="/" component={home} exact/>
+             <Route path="/input" component={Input}/>
+           </Switch>
+        </div> 
+      </BrowserRouter>
+    );
+  }
 }
 
  export default App;
