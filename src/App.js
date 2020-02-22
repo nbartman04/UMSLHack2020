@@ -3,7 +3,9 @@ import './App.css';
 import fire from '.components/config/firebase';
 
 class App extends Component {
+  constructor(){
 
+  }
   
   render() {
     
