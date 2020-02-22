@@ -1,9 +1,8 @@
 import React, {Component} from 'react';
-import './App.css';
-// import test_picture from './assets'
+
 // import fire from '.components/config/firebase';
 
-class App extends Component {
+class Input extends Component {
   
   
   render() {
@@ -28,7 +27,9 @@ class App extends Component {
           // onChange={this.updateInput}
         />
         </label>
+        
          <br/>
+
         <input
         type="password"
         name="password"
@@ -41,4 +42,4 @@ class App extends Component {
 }
 }
 
- export default App;
+ export default Input;
