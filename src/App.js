@@ -4,6 +4,7 @@ import './App.css';
 import home from './components/homepage/homepage'
 import Navigation from './components/Nav_bar/Nav_bar'
 import Input from './components/Input_component/input_component'
+
 // import logo from './assets/logo.jpg'
 // import fire from '.components/config/firebase';
 
@@ -14,6 +15,7 @@ class App extends Component {
         <div>
         <Navigation />
             <Switch>
+              {/* //Watch switch statements */}
              <Route path="/" component={home} exact/>
              <Route path="/input" component={Input}/>
            </Switch>
