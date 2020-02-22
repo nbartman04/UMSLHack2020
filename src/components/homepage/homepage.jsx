@@ -11,7 +11,8 @@ class home extends Component {
 
     render() {
         return (
-            <div>Home</div>
+            
+            <div id = "kids_name">Hello, </div>
         )
     }
 }
