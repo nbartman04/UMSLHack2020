@@ -3,19 +3,20 @@ import 'firebase/firestore'
 import 'firebase/firebase-auth'
 
 const Config = {
-    apiKey: "AIzaSyDTINdQiTiumyE8D-GMjFSfkWx2r2ITOAc",
-    authDomain: "windsor-lake-rod-and-gun-club.firebaseapp.com",
-    databaseURL: "https://windsor-lake-rod-and-gun-club.firebaseio.com",
-    projectId: "windsor-lake-rod-and-gun-club",
-    storageBucket: "windsor-lake-rod-and-gun-club.appspot.com",
-    messagingSenderId: "501704003181",
-    appId: "1:501704003181:web:612bd71f3c8531ad387964",
-    measurementId: "G-ZQJ8QFVG95"
+  
+  apiKey: "AIzaSyB4P5O5LQ4tue5IuY8xmsP3MJ4x3DaSnAE",
+  authDomain: "umslhack2020.firebaseapp.com",
+  databaseURL: "https://umslhack2020.firebaseio.com",
+  projectId: "umslhack2020",
+  storageBucket: "umslhack2020.appspot.com",
+  messagingSenderId: "336095097968",
+  appId: "1:336095097968:web:4ea0a643202414e8f9f0b5"
+
 }
 
 firebase.initializeApp(Config);
 
 export const auth = firebase.auth();
-export const firestore = firebase.firestore();
+export const db = firebase.firestore();
 
 export default firebase;
