@@ -8,21 +8,23 @@ class Input extends Component {
   render() {
     return (
        <form >
-        <input 
-          type="text"
-          name="fullname"
-          placeholder="Full name"
-          // value={this.state.fullname}
-          // onChange={this.updateInput}
-          
-        />
+        
         <br/>
+      
+
+      <div>
+
+
+        <p>Hello    </p>
+      </div>
+
+
         <label>
-          Email:
+          Journal Entry
         <input
           type="email"
           name="email"
-          placeholder="Email"
+          placeholder="What's on your mind?"
           // value={this.state.email}
           // onChange={this.updateInput}
         />
@@ -30,11 +32,7 @@ class Input extends Component {
         
          <br/>
 
-        <input
-        type="password"
-        name="password"
-        placeholder="password"
-        />
+       
          <br/>
         <button type="submit">Submit</button>
       </form>
